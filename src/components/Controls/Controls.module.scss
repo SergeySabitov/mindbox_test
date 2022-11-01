@@ -1,0 +1,44 @@
+.control_container {
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 8rem auto 8rem;
+  align-items: center;
+
+  button {
+    background-color: transparent;
+    color: #eaeaea;
+    border: 1px solid transparent;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.2s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.104);
+      border: 1px solid #eaeaea74;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  .filters {
+    button {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+      &.active {
+        background-color: #eaeaea;
+        color: #444444;
+        border: 1px solid #eaeaea;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+  .itemsLeft {
+    text-align: start;
+  }
+  .clearCompleted {
+    display: flex;
+    justify-content: end;
+  }
+}
